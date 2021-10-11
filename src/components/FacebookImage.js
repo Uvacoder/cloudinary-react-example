@@ -17,7 +17,7 @@ class FacebookImage extends Component {
                     // the onClick handler dynamically changes the fetched facebook profile image by setting a
                     // different value to the `currentPublicId` state property
                 }
-                <a onClick={this.changeImage.bind(this)}>
+                <button onClick={this.changeImage.bind(this)}>
                     <Image
                         className="static-photo"
                         responsive
@@ -36,7 +36,7 @@ class FacebookImage extends Component {
                             radius="20"
                         />
                     </Image>
-                </a>
+                </button>
             </div>
         );
     }
