@@ -20,12 +20,12 @@ class PhotoList extends Component {
                 <Introduction />
                 <h1>Your Photos</h1>
                 <div className="actions">
-                    <a
+                    <button
                         className="upload_link"
                         onClick={this.uploadImageWithCloudinary.bind(this)}
                     >
                         Add photos with Cloudinary File upload
-                    </a>
+                    </button>
                 </div>
                 <div className="actions">
                     <NavLink className="upload_link" exact to="/photos/new">
